@@ -31,7 +31,7 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}-
-    - run: npm ci
+    - run: npm install
     - run: npm install -g @contrast/contrast-cli
     - run: contrast-cli --api_key $CONTRAST_API_KEY --authorization $CONTRAST_AUTHORIZATION --organization_id $CONTRAST_ORG_ID --host $CONTRAST_HOST --application_id $CONTRAST_APPLICATION_ID
       name: Contrast OSS Submit
