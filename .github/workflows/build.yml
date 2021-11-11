@@ -33,7 +33,7 @@ jobs:
           ${{ runner.os }}-
     - run: npm install
     - run: npm install -g @contrast/contrast-cli
-    - run: contrast-cli --api_key $CONTRAST_API_KEY --authorization $CONTRAST_AUTHORIZATION --organization_id $CONTRAST_ORG_ID --host $CONTRAST_HOST --application_id $CONTRAST_APPLICATION_ID
+    - run: contrast-cli --api_key $CONTRAST_API_KEY --authorization $CONTRAST_AUTHORIZATION --organization_id $CONTRAST_ORG_ID --host $CONTRAST_HOST --application_id $CONTRAST_APPLICATION_ID --language $LANGUAGE
       name: Contrast OSS Submit
       env:
         CONTRAST_API_KEY: ${{ secrets.CONTRAST__API__API_KEY }}
@@ -41,6 +41,7 @@ jobs:
         CONTRAST_ORG_ID: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
         CONTRAST_HOST: ${{ secrets.CONTRAST__API__URL }}
         CONTRAST_APPLICATION_ID: ${{ secrets.CONTRAST_APPLICATION_ID }}
+        LANGUAGE: "NODE"
     - run: contrast-cli -r -f -s high --silent --api_key $CONTRAST_API_KEY --authorization $CONTRAST_AUTHORIZATION --organization_id $CONTRAST_ORG_ID --host $CONTRAST_HOST --application_id $CONTRAST_APPLICATION_ID
       name: Contrast OSS Check
       env:
@@ -49,3 +50,4 @@ jobs:
         CONTRAST_ORG_ID: ${{ secrets.CONTRAST__API__ORGANIZATION_ID }}
         CONTRAST_HOST: ${{ secrets.CONTRAST__API__URL }}
         CONTRAST_APPLICATION_ID: ${{ secrets.CONTRAST_APPLICATION_ID }}
+        LANGUAGE: "NODE"
