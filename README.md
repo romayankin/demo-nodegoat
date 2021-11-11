@@ -18,7 +18,7 @@ You can run NodeGoat locally on any machine with Node.js v10.16.0 installed.
 1. Start the server using `npm start`, the Contrast agent will already be enabled.
 1. Browse the application at http://localhost:4000/NodeGoat/
 
-# Running in Docker
+# Running in Docker:
 
 You can run NodeGoat within a Docker container. 
 
