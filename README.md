@@ -4,7 +4,7 @@ This sample application is based on https://github.com/OWASP/NodeGoat.git.
 
 **Warning**: The computer running this application will be vulnerable to attacks, please take appropriate precautions.
 
-# Running standalone
+# Running standalone:
 
 You can run NodeGoat locally on any machine with Node.js v10.16.0 installed.
 
