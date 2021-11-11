@@ -29,7 +29,7 @@ You can run NodeGoat within a Docker container.
 
 # Running in Azure (Azure App Service):
 
-## Pre-Requisites
+## Pre-Requisites:
 
 1. Place a `contrast_security.yaml` file into the application's root folder.
 1. Install Terraform from here: https://www.terraform.io/downloads.html.
