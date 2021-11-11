@@ -42,7 +42,7 @@ You can run NodeGoat within a Docker container.
 1. Run `terraform apply` to build the infrastructure that you need in Azure, this will output the web address for the application. 
 1. Run `terraform destroy` when you would like to stop the app service and release the resources.
 
-## Tests
+## Tests:
 
 This container includes cypress to run automated tests. These can be run using `npm run test-with-contrast`.
 
